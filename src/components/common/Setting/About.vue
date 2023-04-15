@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import { NSpin } from 'naive-ui'
 import pkg from '@/../package.json'
-import { useAuthStore } from '@/store'
+// import { useAuthStore } from '@/store'
 
 // interface ConfigState {
 //   timeoutMs?: number
@@ -13,7 +13,7 @@ import { useAuthStore } from '@/store'
 //   usage?: string
 // }
 
-const authStore = useAuthStore()
+// const authStore = useAuthStore()
 
 const loading = ref(false)
 
