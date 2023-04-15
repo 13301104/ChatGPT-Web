@@ -12,7 +12,8 @@ const limiter = rateLimit({
   max: maxCount,
   statusCode: 200, // 200 means success，but the message is 'Too many request from this IP in 1 hour'
   message: async (req, res) => {
-    res.send({ status: 'Fail', message: 'Too many request from this IP in 1 hour', data: null })
+    const msg = `超过每小时最大对话次数（${MAX_REQUEST_PER_HOUR})，请稍后重试（服务器资源有限，请理解）`
+    res.send({ status: 'Fail', message: msg, data: null })
   },
 })
 

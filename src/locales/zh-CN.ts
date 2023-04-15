@@ -25,7 +25,7 @@ export default {
     success: '操作成功',
     failed: '操作失败',
     verify: '验证',
-    unauthorizedTips: '未经授权，请先进行验证。',
+    unauthorizedTips: '请输入密钥验证\r\n（公众号《遛马少年》回复”密钥“获取密钥）',
   },
   chat: {
     newChatButton: '新建聊天',
